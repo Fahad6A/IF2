@@ -17,7 +17,7 @@
         <mutation else="1"></mutation>
         <value name="IF0">
           <block type="sensor_object" id="418">
-            <field name="OBJECT">RIGHTSIDE</field>
+            <field name="OBJECT">RIGHTFRONT</field>
           </block>
         </value>
         <statement name="DO0">
@@ -26,6 +26,38 @@
         <statement name="ELSE">
           <block type="movement_forward" id="449"></block>
         </statement>
+        <next>
+          <block type="controls_if" id="499" inline="false">
+            <mutation else="1"></mutation>
+            <value name="IF0">
+              <block type="sensor_object" id="537">
+                <field name="OBJECT">LEFTFRONT</field>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="movement_left" id="548"></block>
+            </statement>
+            <statement name="ELSE">
+              <block type="movement_forward" id="558"></block>
+            </statement>
+            <next>
+              <block type="controls_if" id="565" inline="false">
+                <mutation else="1"></mutation>
+                <value name="IF0">
+                  <block type="sensor_object" id="600">
+                    <field name="OBJECT">LEFTFRONT</field>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block type="movement_left" id="611"></block>
+                </statement>
+                <statement name="ELSE">
+                  <block type="movement_forward" id="635"></block>
+                </statement>
+              </block>
+            </next>
+          </block>
+        </next>
       </block>
     </next>
   </block>
