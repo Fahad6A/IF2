@@ -7,10 +7,10 @@
       </block>
     </value>
     <statement name="DO0">
-      <block type="movement_left" id="199"></block>
+      <block type="movement_forward" id="273"></block>
     </statement>
     <statement name="ELSE">
-      <block type="movement_forward" id="273"></block>
+      <block type="movement_left" id="199"></block>
     </statement>
     <next>
       <block type="controls_if" id="391" inline="false">
@@ -21,10 +21,10 @@
           </block>
         </value>
         <statement name="DO0">
-          <block type="movement_left" id="438"></block>
+          <block type="movement_forward" id="449"></block>
         </statement>
         <statement name="ELSE">
-          <block type="movement_forward" id="449"></block>
+          <block type="movement_left" id="438"></block>
         </statement>
         <next>
           <block type="controls_if" id="499" inline="false">
@@ -35,10 +35,10 @@
               </block>
             </value>
             <statement name="DO0">
-              <block type="movement_right" id="656"></block>
+              <block type="movement_forward" id="558"></block>
             </statement>
             <statement name="ELSE">
-              <block type="movement_forward" id="558"></block>
+              <block type="movement_right" id="656"></block>
             </statement>
             <next>
               <block type="controls_if" id="565" inline="false">
@@ -49,10 +49,10 @@
                   </block>
                 </value>
                 <statement name="DO0">
-                  <block type="movement_right" id="645"></block>
+                  <block type="movement_forward" id="635"></block>
                 </statement>
                 <statement name="ELSE">
-                  <block type="movement_forward" id="635"></block>
+                  <block type="movement_right" id="645"></block>
                 </statement>
               </block>
             </next>
